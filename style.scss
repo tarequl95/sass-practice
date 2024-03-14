@@ -1,0 +1,44 @@
+@import 'variabls';
+
+@mixin submit-btn($bg-color){
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    background-color:$bg-color ;
+    
+}
+.text{
+
+    background-color: $background-color;
+    color: $color;
+    margin: $margin;
+    font-size: map-get($font-size, lg );
+
+}
+@media screen and  (main-width:500px) {
+    
+    .text{
+        font-size: map-get($font-size, sm );
+    }
+}
+
+.primary{
+    @include submit-btn( $primary);
+}
+.wrnings{
+    @include submit-btn($wrning);
+    
+}
+.danger{
+    @include submit-btn($danger);
+
+}
+.danger:hover{
+    color: red;
+}
+@for $i from 1 through 4 {
+    .text#{$i}{
+        font-size: $defult-font-size*$i;
+    }
+}

@@ -1,0 +1,57 @@
+.text {
+  background-color: green;
+  color: white;
+  margin: 20px;
+  font-size: 40px;
+}
+
+@media screen and (main-width: 500px) {
+  .text {
+    font-size: 10px;
+  }
+}
+.primary {
+  border: 1px solid;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  background-color: green;
+}
+
+.wrnings {
+  border: 1px solid;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  background-color: rgb(4, 0, 255);
+}
+
+.danger {
+  border: 1px solid;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  background-color: rgb(33, 241, 22);
+}
+
+.danger:hover {
+  color: red;
+}
+
+.text1 {
+  font-size: 15px;
+}
+
+.text2 {
+  font-size: 30px;
+}
+
+.text3 {
+  font-size: 45px;
+}
+
+.text4 {
+  font-size: 60px;
+}
+
+/*# sourceMappingURL=style.css.map */
